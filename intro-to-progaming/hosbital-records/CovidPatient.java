@@ -8,7 +8,7 @@ public class CovidPatient extends Patient
 	
 	//constructor for covid 19 patient
 	//param: int, string, string, int, double
-	public Covid19Patient(int i, String f, String l, int a, double t) 
+	public CovidPatient(int i, String f, String l, int a, double t) 
 	{
 		super(i, f, l, a);
 		temperature = t;

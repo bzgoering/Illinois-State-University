@@ -69,7 +69,7 @@ public class driver {
 					scan.nextLine();
 					
 					//makes and add covid patient to the list
-					Covid19Patient patient = new Covid19Patient(i, f, l, a, t);
+					CovidPatient patient = new CovidPatient(i, f, l, a, t);
 					patient.setPcr(true);
 					patientList.add(patient);
 				}
@@ -164,7 +164,7 @@ public class driver {
 					
 					//turns regular to covid
 					patientList.remove(index);
-					Covid19Patient patient = new Covid19Patient(i, f, l, a, t);
+					CovidPatient patient = new CovidPatient(i, f, l, a, t);
 					patientList.add(patient);
 					System.out.println("Patient is now a covid patient");
 
@@ -193,7 +193,7 @@ public class driver {
 						scan.nextLine();
 						
 						//changes covid 19 patients temperatures
-						Covid19Patient temp = (Covid19Patient) patientList.get(x);
+						CovidPatient temp = (CovidPatient) patientList.get(x);
 						temp.setTemperature(t);
 						patientList.remove(x);
 						patientList.add(x,temp);
