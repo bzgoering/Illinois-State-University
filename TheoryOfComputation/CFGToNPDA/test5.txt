@@ -1,0 +1,5 @@
+S->UV
+U->XAX|UU
+X->aXb|bXa|XX|empty
+A->aA|a
+V->aV|bV|empty

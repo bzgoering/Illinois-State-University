@@ -1,0 +1,2 @@
+q1q2fq3q4q5f,q1-empty->q2,q1-empty->q4,q2-a->q2,q2-b->q3,q3-a->q3,q3-b->q2,q4-b->q4,q4-a->q5,q5-b->q5,q5-a->q4
+q1q2q3f,q1-a-z-z->q1,q1-b-z-z->q2,q2-b-z-bz|b-b-empty|a-z-z|a-b-b->q2,q2-empty-z-z->q3

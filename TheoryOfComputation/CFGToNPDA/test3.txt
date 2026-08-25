@@ -1,0 +1,2 @@
+S->UaU
+U->bUaUa|aUbUa|aUaUb|UU|empty
