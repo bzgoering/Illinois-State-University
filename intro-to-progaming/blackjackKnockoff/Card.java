@@ -1,3 +1,5 @@
+package blackjackKnockoff;
+
 //This class makes card from 1-40 for the game
 //[1-10] are hearts, 
 //[11-20] are spades, 

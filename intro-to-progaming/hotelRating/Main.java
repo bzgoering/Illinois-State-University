@@ -1,6 +1,8 @@
+package hotelRating;
+
 import java.util.ArrayList;
 
-public class Driver {
+public class Main {
 	static ArrayList<Hotel> hotels;
 	
 	public static void main(String[] args)

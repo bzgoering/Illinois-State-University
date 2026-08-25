@@ -1,3 +1,5 @@
+package hosbitalRecords;
+
 /**
  * parent class for Covid 19 patients and regular patients
  */

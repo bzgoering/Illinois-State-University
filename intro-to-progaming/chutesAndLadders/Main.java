@@ -1,9 +1,11 @@
+package chutesAndLadders;
+
 import java.util.*;
 
 //main class for the game class
 //will run the game class until user doesn't want to play again
 
-public class Driver 
+public class Main
 {
 	public static void main(String[] args) 
 	{

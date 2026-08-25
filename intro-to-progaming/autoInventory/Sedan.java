@@ -1,3 +1,5 @@
+package autoInventory;
+
 public class Sedan extends Auto
 {
 	//global Variables

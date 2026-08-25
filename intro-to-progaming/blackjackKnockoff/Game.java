@@ -1,3 +1,5 @@
+package blackjackKnockoff;
+
 import java.util.*;
 
 //Main class that plays a simple card game that only uses cards 1-10 of hearts, spades, clubs, diamonds

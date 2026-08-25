@@ -1,3 +1,5 @@
+package autoInventory;
+
 public class SUV extends Auto
 {
 	//global variables

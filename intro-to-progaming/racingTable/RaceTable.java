@@ -1,3 +1,5 @@
+package racingTable;
+
 import java.util.*;
 import java.text.DecimalFormat;
 public class RaceTable {

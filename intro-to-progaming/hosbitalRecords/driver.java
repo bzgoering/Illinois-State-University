@@ -1,3 +1,5 @@
+package hosbitalRecords;
+
 import java.util.*;
 /**
  * Main class to Patient, Covid19Patient and RegularPatient classes

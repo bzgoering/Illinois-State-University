@@ -1,9 +1,11 @@
+package blackjackKnockoff;
+
 import java.util.*;
 
 //main class for player and game class
 //Author: Ben Goering
 
-public class Driver 
+public class Main
 {
 	public static void main(String[] args)
 	{

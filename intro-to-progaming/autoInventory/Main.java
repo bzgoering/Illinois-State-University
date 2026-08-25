@@ -1,8 +1,10 @@
+package autoInventory;
+
 //imports
 import java.io.*;
 import java.util.*;
 
-public class Driver
+public class Main
 {
 	public static void main(String[] args) 
 	{

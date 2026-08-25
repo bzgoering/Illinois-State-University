@@ -1,3 +1,5 @@
+package autoInventory;
+
 public class Truck extends Auto
 {
 	private String type;

@@ -1,10 +1,12 @@
+package studentGradeBook;
+
 import java.util.*;
 
 /**
  * Author: Ben Goeirng
  * Main class to the StudentReport class
  */
-public class Driver {
+public class Main {
 
 	/**
 	 * @param args

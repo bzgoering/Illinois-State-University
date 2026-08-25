@@ -1,3 +1,5 @@
+package chutesAndLadders;
+
 import java.util.*;
 
 //main class for eels and escalator a game similar to snakes and ladders where players roll a 6 sided die

@@ -1,3 +1,5 @@
+package hosbitalRecords;
+
 /**
  * A patient that has a negative PCR test result
  */

@@ -1,3 +1,5 @@
+package autoInventory;
+
 public abstract class Auto implements AutoInterface
 {
 	//global variables

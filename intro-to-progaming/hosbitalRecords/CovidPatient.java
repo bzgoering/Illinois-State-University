@@ -1,3 +1,5 @@
+package hosbitalRecords;
+
 /**
  * Codivd 19 patients are patients with a positive PCR test result
  */

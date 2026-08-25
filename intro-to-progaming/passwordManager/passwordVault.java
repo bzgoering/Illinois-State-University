@@ -1,3 +1,5 @@
+package passwordManager;
+
 import java.util.*;
 public class passwordVault 
 {
