@@ -5,7 +5,7 @@ import java.util.*;
 //main class for player and game class
 //Author: Ben Goering
 
-public class Main
+public class BlackjackKnockoffDriver
 {
 	public static void main(String[] args)
 	{

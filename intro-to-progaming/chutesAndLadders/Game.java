@@ -111,6 +111,8 @@ public class Game
 		//Variables
 		int roll;
 		currentPlayer = 0;
+		//not closed here: wraps System.in, which Main.java's scan also reads from
+		//after play() returns, and closes once the whole program is done
 		Scanner scan = new Scanner(System.in);
 		String movement = "";
 		
@@ -147,7 +149,6 @@ public class Game
 				currentPlayer = 0;
 			}
 		}
-			
 	}
 	
 	//helper method for play method

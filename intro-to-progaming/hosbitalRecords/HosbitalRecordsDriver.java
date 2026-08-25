@@ -4,7 +4,7 @@ import java.util.*;
 /**
  * Main class to Patient, Covid19Patient and RegularPatient classes
  */
-public class driver {
+public class HosbitalRecordsDriver {
 
 	/**
 	 * @param args

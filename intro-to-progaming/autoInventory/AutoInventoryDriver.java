@@ -4,7 +4,7 @@ package autoInventory;
 import java.io.*;
 import java.util.*;
 
-public class Main
+public class AutoInventoryDriver
 {
 	public static void main(String[] args) 
 	{
@@ -17,25 +17,25 @@ public class Main
 
 		//read file and fills array
 		vehicles = read("Auto_Inventory.csv");
-		
+
+		//single scanner shared for the life of the program
+		Scanner scan = new Scanner(System.in);
+
 		//main loop
 		while (input != 5)
 		{
-			//Variables
-			Scanner user = new Scanner(System.in);
-		
 			//display menu
 			menu();
 			System.out.print("Please select: ");
-			
+
 			//validates
-			input = validation();
-			
+			input = validation(scan);
+
 			//output based off user input
-			switch(input) 
+			switch(input)
 			{
 			//shows Sedan's
-				case(1): 
+				case(1):
 					findType("Sedan", vehicles);
 					break;
 			//shows SUV
@@ -49,18 +49,19 @@ public class Main
 			//Shows cars based of budget
 				case(4):
 					System.out.print("\nPlease enter your brudget: ");
-				
+
 					//validates input
-					double budget = budgetValidation();
-					
+					double budget = budgetValidation(scan);
+
 					//prints vehicles under budget
 					getBudgetCar(budget, vehicles);
 					break;
 			}
 		}
-		
+
 		//application stops msg
 		System.out.println("Good-Bye");
+		scan.close();
 	}
 	
 	//prints cars based on budget
@@ -107,12 +108,11 @@ public class Main
 	}
 	
 	//validates the menu input
-	public static int validation()
+	public static int validation(Scanner input)
 	{
 		//varibles
-		Scanner input = new Scanner(System.in);
 		boolean repeat = true;
-		
+
 		//loops until user enter correct input
 		while (repeat)
 		{
@@ -120,17 +120,17 @@ public class Main
 			try
 			{
 				int userInput = input.nextInt();
-				
+
 				if (userInput < 1 || userInput > 5)
 				{
 					//try again output
 					input.nextLine();
 					System.out.print("Please input a valid input[1,5]: ");
-					
+
 					//Reinforces repeat to be true
 					repeat = true;
 				}
-				else 
+				else
 				{
 					return userInput;
 				}
@@ -141,23 +141,22 @@ public class Main
 				//try again output
 				input.nextLine();
 				System.out.print("Please input a valid input[1,5]: ");
-				
+
 				//Reinforces repeat to be true
 				repeat = true;
 			}
 		}
-		
+
 		//never gets here
 		return -1;
 	}
 
 	//validates budget input
-	public static double budgetValidation()
+	public static double budgetValidation(Scanner input)
 		{
 		//Variables
-			Scanner input = new Scanner(System.in);
 			boolean repeat = true;
-			
+
 			//loops until user enter correct input
 			while (repeat)
 			{
@@ -173,12 +172,12 @@ public class Main
 					//try again output
 					input.nextLine();
 					System.out.print("Error - Please input a valid budget: ");
-					
+
 					//Reinforces repeat to be true
 					repeat = true;
 				}
 			}
-			
+
 			//never gets here
 			return -1;
 		}
@@ -202,18 +201,16 @@ public class Main
 
 		
 		//validation for reading file
-		try
+		try (Scanner fileScan = new Scanner(new File(fileName)))
 		{
-			//gets file to scan
-			Scanner fileScan = new Scanner(new File(fileName));
 			fileScan.nextLine();
-			
+
 			//main reading loop
 			while (fileScan.hasNext())
 			{
 				//reads vehicle info from file
 				vehicleInfo = fileScan.nextLine();
-				
+
 				//scanner to read vehicle info for appropriate variables
 				Scanner infoScan = new Scanner(vehicleInfo);
 				infoScan.useDelimiter(",");
@@ -278,6 +275,7 @@ public class Main
 				passenger = -1;
 				tow = -1;
 				count++;
+				infoScan.close();
 			}
 		}
 		

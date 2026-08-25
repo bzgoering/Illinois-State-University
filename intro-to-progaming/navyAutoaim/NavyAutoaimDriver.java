@@ -5,7 +5,7 @@ import java.util.Scanner;
  * This class will calculate the angle the gun she be pointed to hit a the  target\
  * until the user enter q or Q to stop
  */
-public class main {
+public class NavyAutoaimDriver {
 	/**
 	 * @param args
 	 */

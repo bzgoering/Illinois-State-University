@@ -1,0 +1,7 @@
+{
+    "java.project.sourcePaths": [
+        "intro-to-progaming",
+        "Network-with-Parallelization"
+    ],
+    "java.project.outputPath": "bin"
+}

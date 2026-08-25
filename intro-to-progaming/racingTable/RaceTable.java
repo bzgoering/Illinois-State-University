@@ -226,5 +226,6 @@ public class RaceTable {
 		System.out.println("Total Base Winnings: " + money.format(total_Base_Winnings));
 		System.out.println("Total Bonus Winnings: " + money.format(total_Bonus));
 		System.out.println("Total Net Winnings: " + money.format(total_Net));
+		scan.close();
 	}
 }

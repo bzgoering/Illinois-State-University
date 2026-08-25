@@ -65,17 +65,18 @@ public class ParallelServer
         }
 
         int portNumber = Integer.parseInt(args[0]);
-        ServerSocket welcomeSocket = new ServerSocket(portNumber);
-        System.out.println("TCP server waiting ...");
+        try (ServerSocket welcomeSocket = new ServerSocket(portNumber)) {
+            System.out.println("TCP server waiting ...");
 
-        //creates thread upon connection
-        while(true)
-        {
-            Socket connectionSocket = welcomeSocket.accept();
-            Runnable obj = new WorkerServer(connectionSocket);
-            
-            Thread thread = new Thread(obj);
-            thread.start();
+            //creates thread upon connection
+            while(true)
+            {
+                Socket connectionSocket = welcomeSocket.accept();
+                Runnable obj = new WorkerServer(connectionSocket);
+                
+                Thread thread = new Thread(obj);
+                thread.start();
+            }
         }
     }
 }

@@ -6,7 +6,7 @@ import java.util.*;
  * Author: Ben Goeirng
  * Main class to the StudentReport class
  */
-public class Main {
+public class StudentGradeBookDriver {
 
 	/**
 	 * @param args

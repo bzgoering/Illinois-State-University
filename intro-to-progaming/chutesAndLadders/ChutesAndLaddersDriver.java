@@ -5,7 +5,7 @@ import java.util.*;
 //main class for the game class
 //will run the game class until user doesn't want to play again
 
-public class Main
+public class ChutesAndLaddersDriver
 {
 	public static void main(String[] args) 
 	{
@@ -22,13 +22,14 @@ public class Main
 						 + "\nLand on an eel and you moveback 1 - 8 space(s)"
 						 + "\nland on an escalator and you gain 1 - 8 space(s)"
 						 + "\nFirst Person to get the the end wins\n");
-		
+
+		Scanner scan = new Scanner (System.in);
+
 		//main loop that run the program
 		while (repeat.equals("Y"))
 		{
 			//variables
 			int input = 0;
-			Scanner scan = new Scanner (System.in);
 			boolean repeatVal = true;
 			
 			//validates user input
@@ -88,5 +89,6 @@ public class Main
 		
 		//exit statement
 		System.out.println("Thanks For Playing - GoodBye");
+		scan.close();
 	}
 }

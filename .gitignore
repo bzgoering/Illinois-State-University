@@ -1,0 +1,6 @@
+bin/
+out/
+*.class
+.classpath
+.project
+.settings/

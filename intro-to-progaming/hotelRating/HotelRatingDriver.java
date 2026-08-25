@@ -2,7 +2,7 @@ package hotelRating;
 
 import java.util.ArrayList;
 
-public class Main {
+public class HotelRatingDriver {
 	static ArrayList<Hotel> hotels;
 	
 	public static void main(String[] args)

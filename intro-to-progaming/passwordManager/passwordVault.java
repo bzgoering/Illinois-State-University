@@ -45,5 +45,8 @@ public static void main(String arg[])
 	System.out.println("Username: " + user);
 	System.out.println("password: " + password);
 	System.out.println("Note: " + note);
+
+	scan.close();
+	noteScan.close();
 }
 }
