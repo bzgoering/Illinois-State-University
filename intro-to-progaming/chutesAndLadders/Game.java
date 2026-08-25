@@ -149,6 +149,7 @@ public class Game
 				currentPlayer = 0;
 			}
 		}
+		scan.close();
 	}
 	
 	//helper method for play method
