@@ -1,0 +1,47 @@
+input
+Store Original
+Store counter
+Load Original
+skipCond 0C00
+Jump END
+subt one
+Store counter
+Store counter2
+Jump addLoop
+
+//calculate the loop amount
+addLoop, Load X //simulate mutlipcation through addition
+add Original 
+Store X
+Load counter //update counters
+subt one
+Store counter
+Load counter
+skipCond 800 //repeat if needed
+Jump Loop
+Jump addLoop
+
+//recongigs variables
+Loop, Load X
+Store Original //update original
+Load ZERO
+Store X //reset x
+Load counter2
+subt one //update counters
+Store counter2
+Store counter
+skipcond 800 //repeat if needed
+Jump END
+Jump addLoop
+
+END, Load Original
+Output
+Halt
+
+//variables
+counter, DEC 0
+counter2, DEC 0
+X, DEC 0
+Original, DEC 0
+one, DEC 1
+ZERO, DEC 0

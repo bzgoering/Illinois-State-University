@@ -1,0 +1,95 @@
+//Gets 3 inputs
+Input
+Store X
+Input
+Store Y
+Input
+Store Z
+
+
+//checks X with Y
+Load X
+Subt Y
+SkipCond 000
+Jump YSmaller //Y is smaller
+//X is Smaller and check with Z
+Load X
+Subt Z
+SkipCond 000
+Jump ZXY//output is ZXY
+//X is Smaller than Z, so we check Y and Z for second/third output
+Load Y
+Subt Z
+Skipcond 000
+Jump XZY//output XZY
+//output is XYZ
+load X
+Output
+Load Y
+Output
+Load Z
+Output
+Jump End//end
+
+
+//check Y and Z knowing X is bigger than Y
+YSmaller, Load Y
+Subt Z
+SkipCond 000
+Jump ZYX//output ZYX
+//check X and Z knowing Y is smallest
+Load X
+Subt Z
+SkipCond 000
+Jump YZX //Output YZX
+//output YXZ
+Load Y
+Output
+Load X
+Output
+Load Z
+Output
+Jump End//end
+
+
+ZXY, Load Z
+Output
+Load X
+Output
+Load Y
+Output
+Jump End//end
+
+
+XZY, Load X
+Output
+Load Z
+Output
+Load Y
+Output
+Jump End
+
+
+ZYX, Load Z
+Output
+Load Y
+Output
+Load X
+Output
+Jump End
+
+
+YZX, Load Y
+Output
+Load Z
+Output
+Load X
+Output
+Jump End
+
+
+End, Halt
+// Memory variables
+X, DEC 0
+Y, DEC 0
+Z, DEC 0
