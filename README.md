@@ -1,6 +1,6 @@
 Disclaimer!
 * Some files in this repo may been edited or created by other individuals associated with ISU. Credits other than me are given per File.
-* These are personal learning projects, not intended for public use or material to educate yourself.
+* These are small terminal based projects to learn basic algorithms, network, multithreading, data structures, reading/writing to files, data management, and OOP.
 
 ## Language Versions
 * Java 24.0.1
