@@ -2,6 +2,7 @@ Unofficial transcript (IT & Math related classes)
 
 Classes taken
 IT 168 - Structured Problem Solving Using the Computer (Java)
+
 IT 179 - Intro to Data Structures (Java)
 IT 180 - C++ Programming (C++)
 IT 279 - Algorithms & Data Structures (C++)
