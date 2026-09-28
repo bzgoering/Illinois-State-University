@@ -1,4 +1,4 @@
-Unofficial transcript (IT & Math related Classes taken):
+Unofficial transcript - IT & Math Related Classes Taken:
 
 IT 168 - Structured Problem Solving Using the Computer (Java)
 
