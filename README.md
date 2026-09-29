@@ -45,4 +45,5 @@ MAT 145 - Calculus l
 MAT 146 - Calculus ll
 
 MAT 260 - Discrete Mathematics
+
 MGT 100 - Statistical Reasoning
