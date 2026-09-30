@@ -1,5 +1,4 @@
 import pandas as pd
-import pandas as pd
 import plotly.express as px
 
 co2 = pd.read_csv('co2.csv')
