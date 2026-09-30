@@ -11,8 +11,8 @@ info_score = students['score'].describe()
 
 print(f'Student Data:\n{students}')
 print(f'\nMean Score:\n{mean_score}')
-print(f'\Minimum Score:\n{min_score}')
-print(f'\Maximum Score:\n{max_score}')
+print(f'\nMinimum Score:\n{min_score}')
+print(f'\nMaximum Score:\n{max_score}')
 print(f'\nSummary Statistics:\n{info_score}')
 
 students = pd.DataFrame({
@@ -22,7 +22,8 @@ students = pd.DataFrame({
 count = students['grade'].value_counts()
 high_grade = students[students['grade'].isin(['A','B'])]
 
+print('\nProblem 2')
 print(f'Student Data:\n{students}')
-print(f'Grade Counts:\n{count}')
-print(f'Students with Grade A or B:\n{high_grade}')
+print(f'\nGrade Counts:\n{count}')
+print(f'\nStudents with Grade A or B:\n{high_grade}')
 
