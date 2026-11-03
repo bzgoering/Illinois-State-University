@@ -5,9 +5,9 @@ Methods for visually representing data and information. Covers interactive data 
 
 [Course catalog page](https://coursefinder.illinoisstate.edu/it/352/)
 
-**Language:** Python (pandas, Matplotlib, seaborn, Plotly, Altair)
+**Language:** Python (pandas, Matplotlib, seaborn, Plotly, Altair, Bokeh)
 
 ## What's Here
 | Folder | Description |
 |---|---|
-| `exercises` | Weekly practice assignments, from static charts to interactive visualizations, using datasets like `gapminder.csv` and `co2.csv` |
+| `exercises` | Weekly practice assignments, from static charts to interactive visualizations, using datasets like `gapminder.csv` and `co2.csv`, plus others loaded online (diamonds, Olympic athletes, Happy Planet Index, Google Play Store apps) |
